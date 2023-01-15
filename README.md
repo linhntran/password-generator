@@ -6,7 +6,7 @@ This week's challenge allows us to utilize our JavaScript skills to create an ap
 
 See below for the direct link to the live page:
 
-[Live Link to Deployed Application](https://linhntran.github.io/password-generator)
+[Live Link to Deployed Application](https://linhntran.github.io/password-generator/)
 
 The following image demonstrates what the web application looks like once the user navigates to the live page. 
 
