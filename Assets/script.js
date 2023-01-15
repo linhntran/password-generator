@@ -1,17 +1,18 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
-//Array of characters that can be used for the password
+// Array of characters that can be used for the password
 var number = "0123456789";
 var lower = "abcdefghijklmnopqrstuvwxyz";
 var upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var special = "!#$%&*+-:;<=>?@^_~";
-var choice = "";
 
 function generatePassword() {
   var randomPassword = "";
+  var choices = "";
   var confirmLength = prompt("How many characters would you like in your password?");
-
+  
+  // Prompts user until they select a number between 8 & 128
   while (confirmLength < 8 || confirmLength > 128) {
     alert("Password length must be between 8-128 characters.");
     return generatePassword();
@@ -29,23 +30,23 @@ function generatePassword() {
     return generatePassword();
   }
 
-  // Check to see what user selected
+  // Checks to see what user selected
   if (confirmNumber) {
-    choice += number;
+    choices += number;
   }
   if (confirmLower) {
-    choice += lower;
+    choices += lower;
   }
   if (confirmUpper) {
-    choice += upper;
+    choices += upper;
   }
   if (confirmSpecial) {
-    choice += special;
+    choices += special;
   }
 
   // Generates password based on user choices
   for (var i = 0; i < confirmLength; i++) {
-    randomPassword += choice.charAt(Math.floor(Math.random() * choice.length));
+    randomPassword += choices.charAt(Math.floor(Math.random() * choices.length));
   }
 
   return randomPassword;
