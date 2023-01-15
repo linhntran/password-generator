@@ -8,6 +8,6 @@ See below for the direct link to the live page:
 
 [Live Link to Deployed Application](https://linhntran.github.io/password-generator/)
 
-The following image demonstrates what the web application looks like once the user navigates to the live page. 
+The following image demonstrates what the web application looks like once the user navigates to the live page and generates a random password. 
 
-![A preview of homepage.](./assets/images/preview.gif)
+![A preview of homepage.](./Assets/images/preview.png)
